@@ -1,10 +1,10 @@
-echo "Enter the Value of n :"
+echo "Enter n numbers : "
 read n
-i=1
 sum=0
-while [ $n -gt 0 ]
+i=1
+while [ $i -le $n ]
 do
-  sum= `expr $sum + $i`
-  i= `expr $i + 2`
+	sum=`expr $sum + $i`
+	i=`expr $i + 2`
 done
-echo "The Sum of Odd numbers till $n is $sum"
+echo "Sum is : $sum"
